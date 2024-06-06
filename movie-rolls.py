@@ -3,6 +3,7 @@ import random
 ####################################################################################################
 
 def movie_night(n, show=True):
+    """Pick a movie according to the terrible movie picking rules."""
    
     ## prepare movie sets
     current_movies = set(range(1, n+1))

@@ -8,7 +8,7 @@ def movie_night(n, show=True):
     ## prepare movie sets
     current_movies = set(range(1, n+1))
     eliminated = set()
-   
+    
     count = 0
     while len(current_movies) > 1:
        
@@ -31,7 +31,10 @@ def movie_night(n, show=True):
         count += 1
    
     winner = current_movies.pop()
-    print(f"\n   ~~ {winner} is the winner after {count} rolls ~~ \n")
+    if show:
+        print(f"\n   ~~ {winner} is the winner after {count} rolls ~~ \n")
+
+    return count
  
 ####################################################################################################
 

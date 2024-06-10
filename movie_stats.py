@@ -16,7 +16,7 @@ def run_simulation(n_movies, n_sims=1_000):
 
 if __name__ == "__main__":
     ## prepare to run Monte-Carlo simulations and plot the results
-    movie_counts = np.arange(2, 16)
+    movie_counts = np.arange(3, 16)
     n_sims = 1_000
     fig, axs = plt.subplots(figsize=(5,7), nrows=2)
 

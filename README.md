@@ -6,7 +6,7 @@ Have everyone bring a few movie ideas, and _Movie Picker_ will do the rest!
 Here's what to do:
 
 1. Assign each movie a number
-2. Run `python3 movie-rolls.py`
+2. Run `python3 movie_rolls.py`
 3. Provide the total number of movies on your list
 4. Profit
 
@@ -39,35 +39,12 @@ Sounds simple, but it can quickly destroy friendships.
 
 To demonstrate how inefficient and annoying this method can be for larger numbers of movies, we can use a Monte Carlo simulation to determine the distribution of the number of rolls necessary to finish the game for different numbers of movies.
 
-To run the simulations and generate the figure:
+To run the simulations and generate the figure:  `python3 movie_stats.py`.
+Note this will require python packages `numpy`, `matplotlib`, and `random`.
 
-1. Ensure that `movie-rolls.py` is in the same directory as `movie-stats.py`.
-2. Install the required packages if you haven't already:
-
-    ```sh
-    pip install matplotlib numpy
-    ```
-
-3. Run `movie-stats.py`:
-
-    ```sh
-    python3 movie-stats.py
-    ```
-
-The `movie-stats.py` script runs multiple simulations for different numbers of movies, collects the results, and generates a figure showing:
+The `movie_stats.py` script runs multiple simulations for different numbers of movies, collects the results, and generates a figure showing:
 
 - The mean number of rolls needed to finish the game for different numbers of movies.
 - The distribution of rolls needed for each scenario.
 
 This visualization helps to quantify the inefficiency and adds more drama to the movie picking process, highlighting how it can keep participants on the edge of their seats—or drive them crazy with suspense!
-
-## Example Output
-
-After running the `movie-stats.py` script, you will see a figure saved as `rolls-count.pdf`. This figure contains:
-
-- A plot of the mean number of rolls needed for different numbers of movies.
-- Histograms showing the distribution of rolls needed for each number of movies, with a probability density function overlay.
-
-This additional script provides a fun and analytical way to demonstrate the complexity and potential frustration of the movie picking game.
-
-Enjoy your movie night, and may the best movie win!
